@@ -14,7 +14,7 @@ const CONFIG = {
 	name: 'Divyansh',
 	imageBackground: false,
 	openInNewTab: false,
-	twelveHourFormat: false,
+	twelveHourFormat: true,
 
 	// Greetings
 	greetingMorning: 'Good morning!',

@@ -18,6 +18,8 @@ function displayClock() {
 		ampm = hh >= 12 ? ' pm' : ' am';
 		hh = hh % 12;
 		hh = hh ? hh : 12;
+	} else {
+		hh = ('0' + hh).slice(-2);
 	}
 
 	document.getElementById('hour').innerText = hh;

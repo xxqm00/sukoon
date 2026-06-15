@@ -4,8 +4,7 @@
 
 **S U K O O N**
 
-A minimal, premium startpage with Swiss typography,
-calm aesthetics, and thoughtful micro-interactions.
+A minimal, premium startpage with Swiss typography and calm aesthetics.
 
 <br>
 

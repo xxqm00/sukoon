@@ -8,21 +8,21 @@ const themeToggle = document.querySelector('#themeButton');
 const bodyBackground = document.getElementById('#body');
 
 const enableDark = () => {
-	document.body.classList.add('darktheme');
+	document.documentElement.classList.add('darktheme');
 	localStorage.setItem('darkTheme', 'enabled');
 	themeToggle.innerHTML = `<i id="themeIcon" class="ph ph-sun"></i>`;
 };
 
 const disableDark = () => {
-	document.body.classList.remove('darktheme');
+	document.documentElement.classList.remove('darktheme');
 	localStorage.setItem('darkTheme', null);
 	themeToggle.innerHTML = `<i id="themeIcon" class="ph ph-moon"></i>`;
 };
 
 if (darkTheme === 'enabled') {
-	document.body.classList.add('notransition');
+	document.documentElement.classList.add('notransition');
 	enableDark();
-	document.body.classList.remove('notransition');
+	document.documentElement.classList.remove('notransition');
 } else {
 	disableDark();
 }

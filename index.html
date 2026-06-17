@@ -6,6 +6,35 @@
 		<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
 		<link rel="stylesheet" href="app.css" />
 		<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+		<script src="config.js"></script>
+		<script>
+			(function() {
+				const darkTheme = localStorage.getItem('darkTheme');
+				let isDark = (darkTheme === 'enabled');
+				
+				if (window.CONFIG && CONFIG.autoChangeTheme) {
+					if (CONFIG.changeThemeByOS) {
+						isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+					} else if (CONFIG.changeThemeByHour) {
+						const date = new Date();
+						const hours = date.getHours() < 10 ? '0' + date.getHours().toString() : date.getHours().toString();
+						const minutes = date.getMinutes() < 10 ? '0' + date.getMinutes().toString() : date.getMinutes().toString();
+						const currentTime = hours + ':' + minutes;
+						if (currentTime >= CONFIG.hourDarkThemeActive) {
+							isDark = true;
+						} else if (currentTime >= CONFIG.hourDarkThemeInactive) {
+							isDark = false;
+						}
+					}
+				}
+				
+				if (isDark) {
+					document.documentElement.classList.add('darktheme');
+				} else {
+					document.documentElement.classList.remove('darktheme');
+				}
+			})();
+		</script>
 	</head>
 
 	<!--
@@ -53,7 +82,6 @@
 		</div>
 
 		<!-- Config  -->
-		<script src="config.js"></script>
 
 		<!-- Scripts  -->
 		<script src="assets/js/layout.js"></script>

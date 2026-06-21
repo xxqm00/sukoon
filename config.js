@@ -147,6 +147,14 @@ const CONFIG = {
 					name: 'Roadmap',
 					link: 'https://roadmap.sh/computer-science',
 				},
+				{
+					name: 'Drive',
+					link: 'https://drive.google.com/',
+				},
+				{
+					name: 'Keep',
+					link: 'https://keep.google.com/',
+				},
 			],
 		},
 		{

@@ -136,36 +136,43 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'AUR',
-					link: 'https://aur.archlinux.org/',
+					name: 'Gmail',
+					link: 'https://mail.google.com/',
 				},
-				
 				{
-					name: 'TOP',
-					link: 'https://www.theodinproject.com/paths',
+					name: 'Calendar',
+					link: 'https://calendar.google.com/',
 				},
-				
-				{ name: 'MDN',
-				 link: 'https://developer.mozilla.org/en-US/'
-				}
-
+				{
+					name: 'Drive',
+					link: 'https://drive.google.com/',
+				},
+				{
+					name: 'Keep',
+					link: 'https://keep.google.com/',
+				},
 			],
+		},
 		{
 			icon: 'coffee',
 			id: '2',
 			links: [
 				{
-						name: 'Roadmap',
-					link: 'https://roadmap.sh/computer-science'
+					name: 'AUR',
+					link: 'https://aur.archlinux.org/',
 				},
 				{
-					name: 'D.Dev',
-					link: 'https://app.daily.dev/?utm_source=landing&utm_medium=cta&utm_campaign=landing_conversions'
+					name: 'MDN',
+					link: 'https://developer.mozilla.org/',
 				},
-				{	name: 'ICodeThis',
-				 	link: 'https://icodethis.com/app'
-				}
-					
+				{
+					name: 'Daily.dev',
+					link: 'https://app.daily.dev/?utm_source=landing&utm_medium=cta&utm_campaign=landing_conversions',
+				},
+				{
+					name: 'TOP',
+					link: 'https://www.theodinproject.com/paths',
+				},
 			],
 		},
 	],

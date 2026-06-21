@@ -136,21 +136,17 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
-					name: 'Gmail',
-					link: 'https://mail.google.com/',
+					name: 'AUR',
+					link: 'https://aur.archlinux.org/',
 				},
 				{
-					name: 'Calendar',
-					link: 'https://calendar.google.com/',
+					name: 'TOP',
+					link: 'https://www.theodinproject.com/paths',
 				},
-				{
-					name: 'Drive',
-					link: 'https://drive.google.com/',
-				},
-				{
-					name: 'Keep',
-					link: 'https://keep.google.com/',
-				},
+				{ name: 'MDN',
+				 link: 'https://developer.mozilla.org/en-US/'
+				}
+
 			],
 		},
 		{
@@ -158,21 +154,17 @@ const CONFIG = {
 			id: '2',
 			links: [
 				{
-					name: 'Stack Overflow',
-					link: 'https://stackoverflow.com/',
+						name: 'Roadmap',
+					link: 'https://roadmap.sh/computer-science'
 				},
 				{
-					name: 'MDN',
-					link: 'https://developer.mozilla.org/',
+					name: 'D.Dev',
+					link: 'https://app.daily.dev/?utm_source=landing&utm_medium=cta&utm_campaign=landing_conversions'
 				},
-				{
-					name: 'Dev.to',
-					link: 'https://dev.to/',
-				},
-				{
-					name: 'Hacker News',
-					link: 'https://news.ycombinator.com/',
-				},
+				{	name: 'ICodeThis',
+				 	link: 'https://icodethis.com/app'
+				}
+					
 			],
 		},
 	],

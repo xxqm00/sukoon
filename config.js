@@ -136,20 +136,16 @@ const CONFIG = {
 			id: '1',
 			links: [
 				{
+					name: '1Shows',
+					link: 'https://www.1shows.org/',
+				},
+				{
 					name: 'Gmail',
-					link: 'https://mail.google.com/',
+					link: 'https://mail.google.com/mail/u/0/#inbox',
 				},
 				{
-					name: 'Calendar',
-					link: 'https://calendar.google.com/',
-				},
-				{
-					name: 'Drive',
-					link: 'https://drive.google.com/',
-				},
-				{
-					name: 'Keep',
-					link: 'https://keep.google.com/',
+					name: 'Roadmap',
+					link: 'https://roadmap.sh/computer-science',
 				},
 			],
 		},

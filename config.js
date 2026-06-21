@@ -139,16 +139,17 @@ const CONFIG = {
 					name: 'AUR',
 					link: 'https://aur.archlinux.org/',
 				},
+				
 				{
 					name: 'TOP',
 					link: 'https://www.theodinproject.com/paths',
 				},
+				
 				{ name: 'MDN',
 				 link: 'https://developer.mozilla.org/en-US/'
 				}
 
 			],
-		},
 		{
 			icon: 'coffee',
 			id: '2',
